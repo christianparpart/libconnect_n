@@ -1,0 +1,24 @@
+{
+    "$schema": "https://puremourning.github.io/vimspector/schema/vimspector.schema.json#",
+    "configurations": {
+        "test_connect_n": {
+            "adapter": "vscode-cpptools",
+            "configuration": {
+                "request": "launch",
+                "program": "${workspaceRoot}/build/connect_n/test_connect_n",
+                "args": [
+                ],
+                "cwd": "${workspaceRoot}",
+                "externalConsole": true,
+                "stopAtEntry": false,
+                "MIMode": "gdb"
+            },
+            "breakpoints": {
+                "exception": {
+                    "caught": "Y",
+                    "uncaught": "Y"
+                }
+            }
+        }
+    }
+}
